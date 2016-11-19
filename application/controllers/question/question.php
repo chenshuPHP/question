@@ -62,7 +62,7 @@ class Question extends MY_Controller
                 if(mb_strlen($data['title']) < 30)
                 {
                     $this->load->model('type/type_model');
-                   $type = $this -> type_model->check_type(data['type_id']); //true \\ false
+                   $type = $this -> type_model->check_type($data['type_id']); //true \\ false
                     if($type)
                     {
                         $data['username'] = $status['username'];
