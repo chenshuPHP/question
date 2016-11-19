@@ -18,8 +18,26 @@
             $config = array('id','pid');
             $field = array_merge($config,$field);
             $infinite = $this -> get_infinite($this->table,$field,'',$type_id);
-            $infinite[] = $data['type'];
+            $infinite[] = $type_id;
             return $infinite;
+        }
+
+        /**
+         * 检查分类是否存在
+         */
+        public function check_type($id)
+        {
+
+        }
+        /**
+         * 删除分类
+         */
+        public function del($id)
+        {
+            $data['status'] = '0';
+            $result = $this->where('id',$id)
+                           ->update('user',$data);
+            return $result;
         }
 
     }
