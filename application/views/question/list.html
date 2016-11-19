@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>问题列表</title>
+    <style>
+        #head {
+            height: 100px;
+        }
+        .logo {
+            float: left;
+            margin-top: 5px;
+        }
+        h1{
+            width: 1100px;
+            text-align: center;
+            color: #059C55;
+        }
+        .con_left {
+            width:224px;
+            height:700px;
+            border:1px rebeccapurple solid;
+            float: left;
+        }
+        .con_right {
+            width:1000px;
+            height:700px;
+            float: left;
+            border:1px rebeccapurple solid;
+        }
+        .search {
+            width:1000px;
+            height:40px;
+            float: left;
+            padding-top: 10px;
+            border:1px rebeccapurple solid;
+        }
+        .button {
+            display: block;
+            width: 93px;
+            height: 34px;
+            overflow: hidden;
+            float: left;
+            color: #059C55;
+            font-size: 15px;
+            margin-left: 20px;
+
+        }
+        .text {
+            display: block;
+            margin-left: 20px;
+            width: 300px;
+            height: 34px;
+            overflow: hidden;
+            float: left;
+            color: #059C55;
+            font-size: 15px;
+        }
+        .button_d {
+            width:1000px;
+            height:40px;
+            float: left;
+
+            padding-top: 10px;
+            border:1px rebeccapurple solid;
+        }
+        table {
+            width:1000px;
+            border:1px solid palegreen;
+        }
+        tr {
+            height: 40px;
+            border:1px solid black;
+            font-size:18px ;
+        }
+        td {
+            algin:center;
+        }
+        h2  {
+            color:#059C55
+        }
+
+    </style>
+</head>
+<body>
+    <!--头部-->
+    <div id="head">
+        <div class="logo"><img src="D:\WWW\wenba\public\image\2016_logo.jpg" alt=""></div>
+        <h1>欢迎来到上海装潢网——问吧</h1>
+    </div>
+    <!--身体部分-->
+    <div id="content">
+        <div class="con_left">
+            <h2>分类1级</h2>
+            <h5>&nbsp;&nbsp;&nbsp;分类2级</h5>
+            <h2>分类1级</h2>
+            <h5>&nbsp;&nbsp;&nbsp;分类2级</h5><h2>分类1级</h2>
+            <h5>&nbsp;&nbsp;&nbsp;分类2级</h5>
+        </div>
+        <div class="con_right">
+            <div class="search">
+                <input class="text" type="text"  >
+                <input class="button" type="button" value="搜索">
+                <input class="button" onclick="quiz()" type="button" value="提问">
+            </div>
+            <div class="button_d">
+                <input class="button" type="button" value="全部问题">
+                <input class="button" type="button" value="已解决">
+                <input class="button" type="button" value="未决绝">
+            </div>
+            <div>
+                <table>
+                    <tr>
+                        <th>问题名称</th><th>点击量</th><th>发布信息时间</th>
+                    </tr>
+                    <tr>
+                        <th><a href="">我是问题标题1(解决)</a></th>
+                        <td align="center"> 10</td>
+                        <td align="center">2016-11-19 10:20</td>
+                    </tr>
+                    <tr>
+                        <th><a href="">我是问题标题2(未解决)</a></th>
+                        <td align="center">10</td>
+                        <td align="center">2016-11-19 10:21</td>
+                    </tr>
+                </table>
+            </div>
+
+
+        </div>
+    </div>
+    <!--尾部-->
+    <div id="bottom">
+        <div></div>
+    </div>
+    <script>
+        function quiz()
+        {
+            window.location.href="http://wenba.com/index.php/question/question";
+        }
+    </script>
+</body>
+</html>
